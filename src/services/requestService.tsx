@@ -1,11 +1,11 @@
 import axios, { AxiosRequestHeaders } from "axios";
 
 const $host = axios.create({
-  baseURL: "http://localhost:3004/",
+  baseURL: "https://online-shop-backend-ilalovx.onrender.com/",
 });
 
 const $authHost = axios.create({
-  baseURL: "http://localhost:3004/",
+  baseURL: "https://online-shop-backend-ilalovx.onrender.com/",
 });
 
 $authHost.interceptors.request.use((config) => {
