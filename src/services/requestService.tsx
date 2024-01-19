@@ -1,11 +1,11 @@
 import axios, { AxiosRequestHeaders } from "axios";
 
 const $host = axios.create({
-  baseURL: "http://localhost:10000/",
+  baseURL: "http://localhost:3004/",
 });
 
 const $authHost = axios.create({
-  baseURL: "http://localhost:10000/",
+  baseURL: "http://localhost:3004/",
 });
 
 $authHost.interceptors.request.use((config) => {
