@@ -14,6 +14,7 @@ import {
 } from "../../store/services/mutations";
 
 import styles from "./favorites.module.scss";
+import { ItemType } from "../../types/ItemType";
 
 function Favorites() {
   const dispatch = useAppDispatch();
@@ -27,7 +28,7 @@ function Favorites() {
       return {
         queryKey: ["cartItem", el],
         queryFn: () => fetchItem({ id: el as string }),
-        onSuccess: (res: any) => {
+        onSuccess: (res: ItemType) => {
           dispatch(getFavoritesList(res));
         },
         refetchOnWindowFocus: false,

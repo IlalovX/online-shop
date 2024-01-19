@@ -12,6 +12,7 @@ import { getRouteCart, getRouteMain } from "../../../routes/getPaths/getPaths";
 import styles from "./Header.module.scss";
 import Viber from "../../assets/Viber";
 import Communication from "../../assets/Communication";
+import React from "react";
 
 const items: MenuProps["items"] = [
   {
@@ -28,7 +29,7 @@ const items: MenuProps["items"] = [
   },
 ];
 
-const handlePrevent = (e: any) => {
+const handlePrevent = (e: React.MouseEvent<HTMLButtonElement> | any) => {
   e.preventDefault();
 };
 

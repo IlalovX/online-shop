@@ -22,7 +22,7 @@ export const products = createSlice({
     },
 
     getScrollArray: (state, action: PayloadAction<ItemType[]>) => {
-      action.payload.map((item: any) => state.scrollArrayContainer.push(item));
+      action.payload.map((item) => state.scrollArrayContainer.push(item));
     },
     setSortPopularCards: (state) => {
       const sort = state.cards.sort((a, b) => b.rating - a.rating);

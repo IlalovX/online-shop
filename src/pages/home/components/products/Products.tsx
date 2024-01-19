@@ -115,7 +115,7 @@ function Products() {
     }),
   });
 
-  const handleChangeFilter = (e: any) => {
+  const handleChangeFilter = (e: React.MouseEvent<HTMLButtonElement> | any) => {
     setFilter(e.target.value);
   };
   const handleDescending = () => {

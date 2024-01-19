@@ -159,7 +159,7 @@ function Orders() {
                     <th>Price</th>
                     <th>Rating</th>
                   </tr>
-                  {el?.items?.map((item: any) => (
+                  {el?.items?.map((item: ItemType) => (
                     <tr className={styles.item} key={item?.name}>
                       <td>{item?.name}</td>
                       <th>{item?.price} $</th>
